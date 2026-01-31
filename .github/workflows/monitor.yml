@@ -2,8 +2,8 @@ name: Nikon Lens Monitor
 
 on:
   schedule:
-    # GitHub Actions cron is UTC
-    - cron: "0 9,15 * * *"
+    # GitHub Actions cron is UTC; 13:00/19:00 UTC ~= 9am/3pm ET during DST
+    - cron: "0 13,19 * * *"
   workflow_dispatch:
 
 jobs:
